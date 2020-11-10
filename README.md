@@ -12,6 +12,12 @@ It contains:
 
 ---
 
+>>>## Demo
+
+A demo version of this project can be found [here](https://phillipealves.com/sliding-menu).
+
+---
+
 >>>## ToRun locally
 
 
