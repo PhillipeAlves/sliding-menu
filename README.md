@@ -18,7 +18,7 @@ A demo version of this project can be found [here](https://phillipealves.com/sli
 
 ---
 
->>>## ToRun locally
+>>>## To run locally
 
 
 ### `1`
