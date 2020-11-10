@@ -1,0 +1,13 @@
+/* === PAGE TEMPLATE === */
+.page-container 
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-title 
+{
+    color:  rgb(19, 56, 166);
+    font-size: 5rem;
+}

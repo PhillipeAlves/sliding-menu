@@ -1,0 +1,123 @@
+/* === SLIDING MENU === */
+
+.slide-menu 
+{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    transform: translateX(-100vw);
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+.slide-in 
+{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide-out 
+{
+    opacity: 0;
+    transform: translateX(-100vw);
+}
+
+/* === MENU === */
+
+.nav-bar 
+{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.nav-bar a 
+{
+    padding: 1.5% 0 0 0;
+    height: 100%;
+    width: 100vw;
+    background-color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(19, 56, 166);
+    list-style: none;
+    text-decoration: none;
+    color:  rgb(19, 56, 166);
+    transition: all 0.2s ease-in;
+}
+.nav-bar a:hover 
+{
+    background-color: rgb(19, 56, 166);
+    color: #fff;
+}
+
+/* === TOGGLE BUTTON === */
+
+.toggle-menu-btn
+{
+    position: fixed;
+    top: 3rem;
+    left: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: rgb(19, 56, 166);
+    border: 2px solid rgb(19, 56, 166);
+    border-radius: 50%;
+    align-items: center;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+.toggle-menu-btn::after 
+{
+    content: "";
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    background-color: #fff;
+    border-radius: 50%; 
+    transition: all 0.2s ease-in;
+}
+.toggle-menu-btn:hover 
+{
+    background-color: #fff;
+}
+.toggle-menu-btn:hover::after 
+{
+    background-color: rgb(19, 56, 166);
+    top: .5rem;
+    left: .5rem;
+    right: .5rem;
+    bottom: .5rem;
+}
+.active-menu-btn 
+{
+    background-color: #fff;
+}
+.active-menu-btn::before 
+{
+    content: 'X';
+    font-size: 1.5rem;
+    top: .47rem;
+    left: .85rem;
+    font-weight: bold;
+    color: transparent;
+    position: absolute;
+    z-index: 2;
+    transition: all .3s ease-in;
+}
+.active-menu-btn:hover::before 
+{
+    color: #fff;
+}
+.active-menu-btn::after 
+{
+    background-color: rgb(19, 56, 166);
+    top: .3rem;
+    left: .3rem;
+    right: .3rem;
+    bottom: .3rem;
+}
