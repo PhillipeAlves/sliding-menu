@@ -8,6 +8,6 @@
 }
 .page-title 
 {
-    color:  rgb(19, 56, 166);
+    color:  var(--main);
     font-size: 5rem;
 }
