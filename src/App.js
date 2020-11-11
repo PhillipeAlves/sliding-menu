@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu } from './Components/Menu/Menu'
+import { Menu } from './Components'
 import { HashRouter, Route, Switch } from "react-router-dom";
 import { Home, Projects, Contacts, About } from "./Pages";
 
