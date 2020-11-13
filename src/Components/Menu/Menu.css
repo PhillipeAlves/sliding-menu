@@ -1,126 +1,111 @@
-/* === SLIDING MENU === */
+/* ===( SLIDING MENU )=== */
 
-.slide-menu 
-{
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    transform: translateX(-100vw);
-    transition: all 0.5s ease-in-out;
-    opacity: 0;
+.slide-menu {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  transform: translateX(-100vw);
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
 }
-.slide-in 
-{
-    opacity: 1;
-    transform: translateX(0);
+.slide-in {
+  opacity: 1;
+  transform: translateX(0);
 }
 
-.slide-out 
-{
-    opacity: 0;
-    transform: translateX(-100vw);
+.slide-out {
+  opacity: 0;
+  transform: translateX(-100vw);
 }
 
-/* === MENU === */
+/* ===( MENU )=== */
 
-.nav-bar 
-{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
-.nav-bar a 
-{
-    padding: 1.5% 0 0 0;
-    height: 25%;
-    width: 100vw;
-    background-color: white;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 2px solid var(--main);
-    list-style: none;
-    text-decoration: none;
-    color:  rgb(255, 0, 0);
-    transition: all 0.2s ease-in;
+.nav-bar a {
+  padding: 1.5% 0 0 0;
+  height: 25%;
+  width: 100vw;
+  background-color: white;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid var(--main);
+  list-style: none;
+  text-decoration: none;
+  color: rgb(255, 0, 0);
+  transition: all 0.2s ease-in;
 }
-.nav-bar a:hover 
-{
-    background-color: var(--main);
-    color: #fff;
+.nav-bar a:hover {
+  background-color: var(--main);
+  color: #fff;
 }
-.nav-bar a:last-child 
-{
-    border: none;
+.nav-bar a:last-child {
+  border: none;
 }
-/* === TOGGLE BUTTON === */
+/* ===( TOGGLE BUTTON )=== */
 
-.toggle-menu-btn
-{
-    position: fixed;
-    top: 1rem;
-    left: 1rem;
-    width: 3rem;
-    height: 3rem;
-    background-color: var(--main);
-    border: 2px solid var(--main);
-    border-radius: 50%;
-    align-items: center;
-    z-index: 1;
-    cursor: pointer;
-    transition: all 0.2s ease-in;
+.toggle-menu-btn {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--main);
+  border: 2px solid var(--main);
+  border-radius: 50%;
+  align-items: center;
+  z-index: 1;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
 }
-.toggle-menu-btn::after 
-{
-    content: "";
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    right: 1rem;
-    bottom: 1rem;
-    background-color: #fff;
-    border-radius: 50%; 
-    transition: all 0.2s ease-in;
+.toggle-menu-btn::after {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
 }
-.toggle-menu-btn:hover 
-{
-    background-color: #fff;
+.toggle-menu-btn:hover {
+  background-color: #fff;
 }
-.toggle-menu-btn:hover::after 
-{
-    background-color: var(--main);
-    top: .5rem;
-    left: .5rem;
-    right: .5rem;
-    bottom: .5rem;
+.toggle-menu-btn:hover::after {
+  background-color: var(--main);
+  top: 0.5rem;
+  left: 0.5rem;
+  right: 0.5rem;
+  bottom: 0.5rem;
 }
-.active-menu-btn 
-{
-    background-color: #fff;
+.active-menu-btn {
+  background-color: #fff;
 }
-.active-menu-btn::before 
-{
-    content: 'X';
-    font-size: 1.5rem;
-    top: .47rem;
-    left: .88rem;
-    font-weight: bold;
-    color: transparent;
-    position: absolute;
-    z-index: 2;
-    transition: all .3s ease-in;
+.active-menu-btn::before {
+  content: "X";
+  font-size: 1.5rem;
+  top: 0.47rem;
+  left: 0.88rem;
+  font-weight: bold;
+  color: transparent;
+  position: absolute;
+  z-index: 2;
+  transition: all 0.3s ease-in;
 }
-.active-menu-btn:hover::before 
-{
-    color: #fff;
+.active-menu-btn:hover::before {
+  color: #fff;
 }
-.active-menu-btn::after 
-{
-    background-color: var(--main);
-    top: .3rem;
-    left: .3rem;
-    right: .3rem;
-    bottom: .3rem;
+.active-menu-btn::after {
+  background-color: var(--main);
+  top: 0.3rem;
+  left: 0.3rem;
+  right: 0.3rem;
+  bottom: 0.3rem;
 }

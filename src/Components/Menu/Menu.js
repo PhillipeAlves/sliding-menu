@@ -1,16 +1,14 @@
-import React, { useState } from 'react';
-import { NavBar } from './Navbar'
-import './Menu.css'
+import React, { useState } from "react";
+import { NavBar } from "./Navbar";
+import { MenuButton } from "./MenuButton";
+import "./Menu.css";
 
 export const Menu = () => {
-    const [toggle, setToggle] = useState(false);
-    return ( 
-        <>
-            <NavBar toggle={toggle} onClick={() => setToggle(!toggle)}/>     
-            <span
-                className={`toggle-menu-btn ${toggle ? 'active-menu-btn' : ''}`}
-                onClick={() => setToggle(!toggle)}
-            ></span>
-        </>
-    );
-}
+  const [toggle, setToggle] = useState(false);
+  return (
+    <React.Fragment>
+      <NavBar toggle={toggle} onClick={() => setToggle(!toggle)} />
+      <MenuButton toggle={toggle} onClick={() => setToggle(!toggle)} />
+    </React.Fragment>
+  );
+};

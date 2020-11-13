@@ -1,13 +1,12 @@
-/* === PAGE TEMPLATE === */
-.page-container 
-{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* ===( PAGE TEMPLATE )=== */
+
+.page-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.page-title 
-{
-    color:  var(--main);
-    font-size: 5rem;
+.page-title {
+  color: var(--main);
+  font-size: 5rem;
 }
